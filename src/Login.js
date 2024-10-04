@@ -94,7 +94,6 @@ export default function Login() {
             </div>
           </td>
         </tr>
-        Forgot password
       </table>
       
     </div>
