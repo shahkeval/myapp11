@@ -7,10 +7,13 @@ import UserModelSalary from './model/salary.js';
 import UserModelLeave from './model/leave.js';
 
 const app = express();
-const port = 8001;
+const port = 3000;
 app.use(cors());
 app.use(express.json());
-
+const server = new ApolloServer({
+  playground: true,
+  introspection: true,
+});
 mongoose.connect('mongodb://localhost:27017/db1');
 
 //To get all emp
